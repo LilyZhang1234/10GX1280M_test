@@ -1,0 +1,8 @@
+//constant source for source_gen
+//value for const: 0x3C5C; value for const_bar: 0xC3A3
+
+module const_source(
+		output reg
+
+
+);

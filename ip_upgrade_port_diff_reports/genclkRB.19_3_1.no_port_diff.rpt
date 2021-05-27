@@ -1,0 +1,23 @@
+IP Ports Diff Report for genclkRB
+Mon May 24 15:40:37 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; IP Information                                                                                                                          ;
++----------------------+------------------------------------------------------------------------------------------------------------------+
+; IP Variation Name    ; genclkRB                                                                                                         ;
+; Prior Version        ; 18.1                                                                                                             ;
+; New Version          ; 19.3.1                                                                                                           ;
+; New File             ; C:/Users/L/Desktop/Reasearch Lab/Dr. Ye pt. 2/datao_lily_PAM4/testcyclone10GX1280M/src/genclkRB/synth/genclkRB.v ;
+; Has Port Differences ; No                                                                                                               ;
++----------------------+------------------------------------------------------------------------------------------------------------------+
+
+

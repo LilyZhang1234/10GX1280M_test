@@ -1,0 +1,19 @@
+Fitter Status : Successful - Wed May 26 20:46:49 2021
+Quartus Prime Version : 21.1.0 Build 169 03/24/2021 SC Pro Edition
+Revision Name : test1280M
+Top-level Entity Name : test1280M
+Family : Cyclone 10 GX
+Device : 10CX220YF780E5G
+Timing Models : Final
+Power Models : Final
+Device Status : Final
+Logic utilization (in ALMs) : 648 / 80,330 ( < 1 % )
+Total registers : 1849
+Total pins : 24 / 340 ( 7 % )
+Total virtual pins : 0
+Total block memory bits : 2,752,512 / 12,021,760 ( 23 % )
+Total RAM Blocks : 168 / 587 ( 29 % )
+Total DSP Blocks : 0 / 192 ( 0 % )
+Total HSSI RX channels : 0 / 12 ( 0 % )
+Total HSSI TX channels : 0 / 12 ( 0 % )
+Total PLLs : 1 / 30 ( 3 % )

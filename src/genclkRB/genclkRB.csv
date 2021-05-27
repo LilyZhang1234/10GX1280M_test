@@ -1,0 +1,18 @@
+# system info genclkRB on 2021.05.24.15:39:55
+system_info:
+name,value
+DEVICE,10CX220YF780E5G
+DEVICE_FAMILY,Cyclone 10 GX
+GENERATION_ID,0
+#
+#
+# Files generated for genclkRB on 2021.05.24.15:39:55
+files:
+filepath,kind,attributes,module,is_top
+sim/genclkRB.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,genclkRB,true
+altera_iopll_1931/sim/genclkRB_altera_iopll_1931_n5xoe5y.vo,VERILOG,,genclkRB_altera_iopll_1931_n5xoe5y,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+genclkRB.iopll_0,genclkRB_altera_iopll_1931_n5xoe5y

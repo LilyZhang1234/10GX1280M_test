@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <window width="1938" height="1048" x="423" y="23" />
+ <library
+   expandedCategories="Existing IP Variants,Library,IP-XACT Components,Project" />
+ <systemtable filter="All Interfaces" />
+ <generation path="" />
+</preferences>

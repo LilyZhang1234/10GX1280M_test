@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2021.05.25.14:27:24"
+ outputDirectory="C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/source_sel/source_sel/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone 10 GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10CX220YF780E5G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clk_reset" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="src" kind="avalon_streaming_credit" start="1">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="clk_reset" />
+   <property name="dataBitsPerSymbol" value="16" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="maxChannel" value="3" />
+   <property name="maxCredit" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="symbolsPerBeat" value="4" />
+   <property name="updateMode" value="0" />
+   <property name="useInitHandshake" value="false" />
+   <property name="usePackets" value="false" />
+   <port name="src_in_credit" direction="input" role="credit" width="1" />
+   <port name="src_in_update" direction="input" role="update" width="1" />
+   <port
+       name="src_out_ret_credit"
+       direction="output"
+       role="returnCredit"
+       width="1" />
+   <port name="src_out_channel" direction="output" role="channel" width="2" />
+   <port name="src_out_data" direction="output" role="data" width="64" />
+   <port name="src_out_valid" direction="output" role="valid" width="1" />
+  </interface>
+  <interface name="sink0" kind="avalon_streaming_credit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="clk_reset" />
+   <property name="dataBitsPerSymbol" value="16" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="maxChannel" value="0" />
+   <property name="maxCredit" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="symbolsPerBeat" value="4" />
+   <property name="updateMode" value="0" />
+   <property name="useInitHandshake" value="false" />
+   <property name="usePackets" value="false" />
+   <port name="sink0_valid" direction="input" role="valid" width="1" />
+   <port name="sink0_data" direction="input" role="data" width="64" />
+   <port name="sink0_credit" direction="output" role="credit" width="1" />
+   <port name="sink0_update" direction="output" role="update" width="1" />
+   <port
+       name="sink0_ret_credit"
+       direction="input"
+       role="returnCredit"
+       width="1" />
+  </interface>
+  <interface name="sink1" kind="avalon_streaming_credit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="clk_reset" />
+   <property name="dataBitsPerSymbol" value="16" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="maxChannel" value="0" />
+   <property name="maxCredit" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="symbolsPerBeat" value="4" />
+   <property name="updateMode" value="0" />
+   <property name="useInitHandshake" value="false" />
+   <property name="usePackets" value="false" />
+   <port name="sink1_valid" direction="input" role="valid" width="1" />
+   <port name="sink1_data" direction="input" role="data" width="64" />
+   <port name="sink1_credit" direction="output" role="credit" width="1" />
+   <port name="sink1_update" direction="output" role="update" width="1" />
+   <port
+       name="sink1_ret_credit"
+       direction="input"
+       role="returnCredit"
+       width="1" />
+  </interface>
+  <interface name="sink2" kind="avalon_streaming_credit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="clk_reset" />
+   <property name="dataBitsPerSymbol" value="16" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="maxChannel" value="0" />
+   <property name="maxCredit" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="symbolsPerBeat" value="4" />
+   <property name="updateMode" value="0" />
+   <property name="useInitHandshake" value="false" />
+   <property name="usePackets" value="false" />
+   <port name="sink2_valid" direction="input" role="valid" width="1" />
+   <port name="sink2_data" direction="input" role="data" width="64" />
+   <port name="sink2_credit" direction="output" role="credit" width="1" />
+   <port name="sink2_update" direction="output" role="update" width="1" />
+   <port
+       name="sink2_ret_credit"
+       direction="input"
+       role="returnCredit"
+       width="1" />
+  </interface>
+  <interface name="sink3" kind="avalon_streaming_credit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="clk_reset" />
+   <property name="dataBitsPerSymbol" value="16" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="maxChannel" value="0" />
+   <property name="maxCredit" value="1" />
+   <property name="prSafe" value="false" />
+   <property name="symbolsPerBeat" value="4" />
+   <property name="updateMode" value="0" />
+   <property name="useInitHandshake" value="false" />
+   <property name="usePackets" value="false" />
+   <port name="sink3_valid" direction="input" role="valid" width="1" />
+   <port name="sink3_data" direction="input" role="data" width="64" />
+   <port name="sink3_credit" direction="output" role="credit" width="1" />
+   <port name="sink3_update" direction="output" role="update" width="1" />
+   <port
+       name="sink3_ret_credit"
+       direction="input"
+       role="returnCredit"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="source_sel" version="1.0" name="source_sel">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="10CX220YF780E5G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\synth\source_sel.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\synth\source_sel.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/source_sel/source_sel.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/avalon_st_credit/avst_credit_multiplexer/avst_credit_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: source_sel"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_110_xsulssa"</message>
+   <message level="Info" culprit="mux_inst_name">"Generating: mux_inst_name"</message>
+   <message level="Info" culprit="my_altera_reset_controller">"Generating: my_altera_reset_controller"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_altera_merlin_multiplexer_1921_hjfvwkq"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq"</message>
+   <message level="Info" culprit="source_sel">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="avst_credit_multiplexer"
+   version="1.1.0"
+   name="source_sel_avst_credit_multiplexer_110_xsulssa">
+  <parameter name="USE_EMPTY" value="0" />
+  <parameter name="sig_type" value="PER_SYMBOL,PER_SYMBOL,PER_SYMBOL,PER_SYMBOL" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="SRC_DATA_W" value="64" />
+  <parameter name="SRC_SYMBOLS_PER_BEAT" value="4" />
+  <parameter name="sig_wdth" value="16,16,16,16" />
+  <parameter name="USE_ERROR" value="0" />
+  <parameter name="SINK_USE_CHANNEL" value="0" />
+  <parameter name="SRC_MAX_CREDIT" value="1" />
+  <parameter name="SRC_EMPTY_W" value="2" />
+  <parameter name="SRC_ERROR_W" value="1" />
+  <parameter name="USE_INIT_HS" value="0" />
+  <parameter name="SINK_CHANNEL_W" value="2" />
+  <parameter name="SRC_CRD_W" value="1" />
+  <parameter name="SRC_DATA_BITS_PER_SYMBOL" value="16" />
+  <parameter name="SRC_CHANNEL_W" value="2" />
+  <parameter name="NUM_SINK" value="4" />
+  <parameter name="USER_SIGNALS" value="0" />
+  <parameter name="USE_ENCODING" value="0" />
+  <parameter name="USE_CHANNEL" value="1" />
+  <parameter name="sig_name" value="counter_out,prbs_out,const,const_bar" />
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_altera_syncram_wrapped.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_high_speed_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_latency_one_ram_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_latency_zero_ram_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_lfsr.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_low_latency_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_mid_speed_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_reset_handler.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_tessellated_incr_decr_threshold.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_tessellated_incr_lookahead.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_zero_latency_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\hld_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_ecc.svh"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\credit2ready.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\credit_manager.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\altera_avalon_st_pipeline_base.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_110_xsulssa.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_altera_syncram_wrapped.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_high_speed_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_latency_one_ram_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_latency_zero_ram_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_lfsr.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_low_latency_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_mid_speed_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_reset_handler.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_tessellated_incr_decr_threshold.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_tessellated_incr_lookahead.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_zero_latency_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\hld_fifo.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\acl_ecc.svh"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\credit2ready.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\credit_manager.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\altera_avalon_st_pipeline_base.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_110_xsulssa.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/avalon_st_credit/avst_credit_multiplexer/avst_credit_multiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="source_sel" as="avst_credit_multiplexer_0" />
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_110_xsulssa"</message>
+   <message level="Info" culprit="mux_inst_name">"Generating: mux_inst_name"</message>
+   <message level="Info" culprit="my_altera_reset_controller">"Generating: my_altera_reset_controller"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_altera_merlin_multiplexer_1921_hjfvwkq"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq"</message>
+   <message level="Info" culprit="source_sel">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="avst_credit_multiplexer_altera_merlin_multiplexer"
+   version="1.1.0"
+   name="source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi">
+  <parameter name="MERLIN_PACKET_FORMAT" value="" />
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="ARBITRATION_SHARES" value="1" />
+  <parameter name="NUM_INPUTS" value="4" />
+  <parameter name="PIPELINE_ARB" value="1" />
+  <parameter name="ARBITRATION_SCHEME" value="round-robin" />
+  <parameter name="ST_DATA_W" value="64" />
+  <parameter name="USE_EXTERNAL_ARB" value="0" />
+  <parameter name="PKT_TRANS_LOCK" value="-1" />
+  <parameter name="SYNC_RESET" value="1" />
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="source_sel_avst_credit_multiplexer_110_xsulssa"
+     as="mux_inst_name" />
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi"</message>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_altera_merlin_multiplexer_1921_hjfvwkq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="avst_credit_multiplexer_altera_reset_controller"
+   version="1.1.0"
+   name="source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq">
+  <parameter name="USE_RESET_REQUEST_IN12" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN13" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN10" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN11" value="0" />
+  <parameter name="SYNC_DEPTH" value="2" />
+  <parameter name="ADAPT_RESET_REQUEST" value="0" />
+  <parameter name="OUTPUT_RESET_SYNC_EDGES" value="deassert" />
+  <parameter name="RESET_REQ_WAIT_TIME" value="1" />
+  <parameter name="USE_RESET_REQUEST_IN1" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN2" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN3" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN4" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN0" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN9" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN5" value="0" />
+  <parameter name="RESET_REQUEST_PRESENT" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN6" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN7" value="0" />
+  <parameter name="USE_RESET_REQUEST_IN8" value="0" />
+  <parameter name="NUM_RESET_INPUTS" value="6" />
+  <parameter name="RESET_REQ_EARLY_DSRT_TIME" value="1" />
+  <parameter name="USE_RESET_REQUEST_IN14" value="0" />
+  <parameter name="MIN_RST_ASSERTION_TIME" value="3" />
+  <parameter name="USE_RESET_REQUEST_IN15" value="0" />
+  <parameter name="USE_RESET_REQUEST_INPUT" value="0" />
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\avst_credit_multiplexer_110\synth\source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="source_sel_avst_credit_multiplexer_110_xsulssa"
+     as="my_altera_reset_controller" />
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq"</message>
+   <message level="Info" culprit="source_sel">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_merlin_multiplexer"
+   version="19.2.1"
+   name="source_sel_altera_merlin_multiplexer_1921_hjfvwkq">
+  <parameter name="ST_CHANNEL_W" value="2" />
+  <parameter name="ARBITRATION_SHARES" value="1" />
+  <parameter name="NUM_INPUTS" value="4" />
+  <parameter name="PIPELINE_ARB" value="1" />
+  <parameter name="ARBITRATION_SCHEME" value="round-robin" />
+  <parameter name="ST_DATA_W" value="64" />
+  <parameter name="USE_EXTERNAL_ARB" value="0" />
+  <parameter name="PKT_TRANS_LOCK" value="-1" />
+  <parameter name="SYNC_RESET" value="1" />
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_merlin_multiplexer_1921\synth\source_sel_altera_merlin_multiplexer_1921_hjfvwkq.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_merlin_multiplexer_1921\synth\altera_merlin_arbitrator.sv"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_merlin_multiplexer_1921\synth\source_sel_altera_merlin_multiplexer_1921_hjfvwkq.sv"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_merlin_multiplexer_1921\synth\altera_merlin_arbitrator.sv"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_merlin_multiplexer/altera_merlin_multiplexer_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi"
+     as="mux_inst_name" />
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: source_sel_altera_merlin_multiplexer_1921_hjfvwkq"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_reset_controller"
+   version="19.2.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_controller.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_controller.v"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\src\source_sel\source_sel\altera_reset_controller_1921\synth\altera_reset_controller.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_pro/21.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq"
+     as="my_altera_reset_controller" />
+  <messages>
+   <message level="Info" culprit="source_sel">"Generating: altera_reset_controller"</message>
+  </messages>
+ </entity>
+</deploy>

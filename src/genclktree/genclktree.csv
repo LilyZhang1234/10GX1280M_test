@@ -1,0 +1,18 @@
+# system info genclktree on 2021.05.24.15:39:54
+system_info:
+name,value
+DEVICE,10CX220YF780E5G
+DEVICE_FAMILY,Cyclone 10 GX
+GENERATION_ID,0
+#
+#
+# Files generated for genclktree on 2021.05.24.15:39:54
+files:
+filepath,kind,attributes,module,is_top
+sim/genclktree.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,genclktree,true
+altera_iopll_1931/sim/genclktree_altera_iopll_1931_dnmm4ra.vo,VERILOG,,genclktree_altera_iopll_1931_dnmm4ra,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+genclktree.iopll_0,genclktree_altera_iopll_1931_dnmm4ra

@@ -1,0 +1,14 @@
+//module for source_gen with mux selector
+//mux 4to1, push buttons(PB1(MSB) and PB0(LSB)) as selector and led (D22(MSB) and D19(LSB)) as indicator 
+
+module source_gen(
+		input [15:0] ch1,	//counter
+		input [15:0] ch2,	//prbs
+		input [15:0] ch3,	//const
+		input [15:0] ch4,	//const_bar
+		input	[1:0]	selector,	//from push button
+		
+		output reg [1:0] indicator,//to led's
+		output reg [15:0] source_out  
+);
+

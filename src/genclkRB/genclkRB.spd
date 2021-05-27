@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_iopll_1931/sim/genclkRB_altera_iopll_1931_n5xoe5y.vo"
+   type="VERILOG"
+   library="altera_iopll_1931" />
+ <file
+   path="sim/genclkRB.v"
+   type="VERILOG"
+   library="genclkRB"
+   hasInlineConfiguration="true" />
+ <topLevel name="genclkRB.genclkRB" />
+ <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780E5G" />
+</simPackage>

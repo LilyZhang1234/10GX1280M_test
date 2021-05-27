@@ -1,0 +1,43 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: dengbw
+// 
+// Create Date: 2020/11/08 16:50:00
+// Design Name: 
+// Module Name: DataSerializer
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module DataSerializer(
+    input clk320,
+    input [39:0] frame,
+    output DataTx
+    );
+reg Tx=0;
+reg [5:0] cnt=6'b0;
+
+reg [39:0] framebuf;
+always @(posedge clk320)
+begin
+    cnt<=cnt+1'b1;
+    if (cnt== 39) begin
+     cnt<=6'b0;
+     framebuf<=frame;
+     end
+    
+    Tx<=framebuf[39-cnt];//MSB    
+end
+assign DataTx=Tx;
+endmodule

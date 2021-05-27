@@ -1,0 +1,66 @@
+# Copyright (C) 2021  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+# File: C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\testcyclone10GX1280M\output_files\test1280M.csv
+# Generated on: Wed May 26 16:50:03 2021
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,VCCR_GXB/VCCT_GXB Voltage,Strict Preservation
+counter_out[12],Output,PIN_U3,3B,Differential 1.2-V SSTL,,,,counter_out[12](n),,
+counter_out[5],Output,PIN_U8,3B,Differential 1.2-V SSTL,,,,counter_out[5](n),,
+counter_out[15],Output,PIN_H1,3B,Differential 1.2-V SSTL,,,,counter_out[15](n),,
+counter_out[8],Output,PIN_AB6,3A,Differential 1.2-V SSTL,,,,counter_out[8](n),,
+counter_out[1],Output,PIN_T8,3B,Differential 1.2-V SSTL,,,,counter_out[1](n),,
+counter_out[11],Output,PIN_V1,3B,Differential 1.2-V SSTL,,,,counter_out[11](n),,
+counter_out[4],Output,PIN_T4,3B,Differential 1.2-V SSTL,,,,counter_out[4](n),,
+counter_out[14],Output,PIN_N2,3B,Differential 1.2-V SSTL,,,,counter_out[14](n),,
+counter_out[7],Output,PIN_W8,3A,Differential 1.2-V SSTL,,,,counter_out[7](n),,
+counter_out[0],Output,PIN_T6,3B,Differential 1.2-V SSTL,,,,counter_out[0](n),,
+counter_out[10],Output,PIN_Y1,3A,Differential 1.2-V SSTL,,,,counter_out[10](n),,
+counter_out[3],Output,PIN_AA9,3A,Differential 1.2-V SSTL,,,,counter_out[3](n),,
+FPGA_RESETn,Input,PIN_AC12,2A,1.2 V,,,,,,
+counter_out[13],Output,PIN_T2,3B,Differential 1.2-V SSTL,,,,counter_out[13](n),,
+counter_out[6],Output,PIN_W4,3A,Differential 1.2-V SSTL,,,,counter_out[6](n),,
+counter_out[9],Output,PIN_W5,3A,Differential 1.2-V SSTL,,,,counter_out[9](n),,
+counter_out[2],Output,PIN_U6,3B,Differential 1.2-V SSTL,,,,counter_out[2](n),,
+counter_out[2](n),Output,PIN_V7,3B,Differential 1.2-V SSTL,,,,counter_out[2],,
+counter_out[0](n),Output,PIN_T7,3B,Differential 1.2-V SSTL,,,,counter_out[0],,
+counter_out[1](n),Output,PIN_T9,3B,Differential 1.2-V SSTL,,,,counter_out[1],,
+counter_out[3](n),Output,PIN_AA8,3A,Differential 1.2-V SSTL,,,,counter_out[3],,
+counter_out[4](n),Output,PIN_U5,3B,Differential 1.2-V SSTL,,,,counter_out[4],,
+counter_out[5](n),Output,PIN_V8,3B,Differential 1.2-V SSTL,,,,counter_out[5],,
+counter_out[6](n),Output,PIN_Y4,3A,Differential 1.2-V SSTL,,,,counter_out[6],,
+counter_out[7](n),Output,PIN_W7,3A,Differential 1.2-V SSTL,,,,counter_out[7],,
+counter_out[8](n),Output,PIN_AB5,3A,Differential 1.2-V SSTL,,,,counter_out[8],,
+counter_out[9](n),Output,PIN_Y5,3A,Differential 1.2-V SSTL,,,,counter_out[9],,
+counter_out[10](n),Output,PIN_Y2,3A,Differential 1.2-V SSTL,,,,counter_out[10],,
+counter_out[11](n),Output,PIN_U1,3B,Differential 1.2-V SSTL,,,,counter_out[11],,
+counter_out[12](n),Output,PIN_U4,3B,Differential 1.2-V SSTL,,,,counter_out[12],,
+counter_out[13](n),Output,PIN_T3,3B,Differential 1.2-V SSTL,,,,counter_out[13],,
+counter_out[14](n),Output,PIN_N3,3B,Differential 1.2-V SSTL,,,,counter_out[14],,
+counter_out[15](n),Output,PIN_G1,3B,Differential 1.2-V SSTL,,,,counter_out[15],,
+FMCAclk40,Input,PIN_N1,3B,LVDS,,,,FMCAclk40(n),,
+ECLK0,Unknown,PIN_AB16,2A,LVDS,,,,ECLK0(n),,
+ECLK0(n),Unknown,PIN_AA16,2A,LVDS,,,,ECLK0,,
+EDIN00,Unknown,PIN_AE15,2A,Differential 1.2-V SSTL,,,,EDIN00(n),,
+EDIN00(n),Unknown,PIN_AE14,2A,Differential 1.2-V SSTL,,,,EDIN00,,
+EDIN00_test,Unknown,PIN_A19,2K,Differential 1.2-V SSTL,,,,EDIN00_test(n),,
+EDIN00_test(n),Unknown,PIN_A18,2K,Differential 1.2-V SSTL,,,,EDIN00_test,,
+FPGA_CLK,Unknown,PIN_A24,2K,LVDS,,,,FPGA_CLK(n),,
+FPGA_CLK(n),Unknown,PIN_A23,2K,LVDS,,,,FPGA_CLK,,
+probe,Unknown,PIN_V5,3B,1.2 V,,,,,,
+FMCAclk40(n),Input,PIN_M1,3B,LVDS,,,,FMCAclk40,,

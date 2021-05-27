@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_merlin_multiplexer_1921/sim/source_sel_altera_merlin_multiplexer_1921_hjfvwkq.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1921" />
+ <file
+   path="altera_merlin_multiplexer_1921/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1921" />
+ <file
+   path="avst_credit_multiplexer_110/sim/source_sel_avst_credit_multiplexer_altera_merlin_multiplexer_110_l2uosvi.v"
+   type="VERILOG"
+   library="avst_credit_multiplexer_110"
+   hasInlineConfiguration="true" />
+ <file
+   path="altera_reset_controller_1921/sim/altera_reset_controller.v"
+   type="VERILOG"
+   library="altera_reset_controller_1921" />
+ <file
+   path="altera_reset_controller_1921/sim/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="altera_reset_controller_1921" />
+ <file
+   path="altera_reset_controller_1921/sim/altera_reset_controller.sdc"
+   type="SDC_ENTITY"
+   library="altera_reset_controller_1921" />
+ <file
+   path="avst_credit_multiplexer_110/sim/source_sel_avst_credit_multiplexer_altera_reset_controller_110_mpjuyrq.v"
+   type="VERILOG"
+   library="avst_credit_multiplexer_110"
+   hasInlineConfiguration="true" />
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_altera_syncram_wrapped.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_high_speed_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_latency_one_ram_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_latency_zero_ram_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_lfsr.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_low_latency_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_mid_speed_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_reset_handler.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_tessellated_incr_decr_threshold.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_tessellated_incr_lookahead.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/acl_zero_latency_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/hld_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/credit2ready.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/credit_manager.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/altera_avalon_st_pipeline_base.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="avst_credit_multiplexer_110/sim/source_sel_avst_credit_multiplexer_110_xsulssa.sv"
+   type="SYSTEM_VERILOG"
+   library="avst_credit_multiplexer_110">
+  <include path="avst_credit_multiplexer_110/sim/acl_ecc.svh" />
+ </file>
+ <file
+   path="sim/source_sel.v"
+   type="VERILOG"
+   library="source_sel"
+   hasInlineConfiguration="true" />
+ <topLevel name="source_sel.source_sel" />
+ <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780E5G" />
+</simPackage>

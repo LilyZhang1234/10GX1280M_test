@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="avst_credit_multiplexer_0"
+ megafunction_name="AVST_CREDIT_MULTIPLEXER"
+ specifies="all_ports">
+ <global>
+  <pin name="clk" direction="input" scope="external" />
+  <pin name="reset" direction="input" scope="external" />
+  <pin name="src_in_credit" direction="input" scope="external" />
+  <pin name="src_in_update" direction="input" scope="external" />
+  <pin name="src_out_ret_credit" direction="output" scope="external" />
+  <pin name="src_out_channel[1..0]" direction="output" scope="external" />
+  <pin name="src_out_data[63..0]" direction="output" scope="external" />
+  <pin name="src_out_valid" direction="output" scope="external" />
+  <pin name="sink0_valid" direction="input" scope="external" />
+  <pin name="sink0_data[63..0]" direction="input" scope="external" />
+  <pin name="sink0_credit" direction="output" scope="external" />
+  <pin name="sink0_update" direction="output" scope="external" />
+  <pin name="sink0_ret_credit" direction="input" scope="external" />
+  <pin name="sink1_valid" direction="input" scope="external" />
+  <pin name="sink1_data[63..0]" direction="input" scope="external" />
+  <pin name="sink1_credit" direction="output" scope="external" />
+  <pin name="sink1_update" direction="output" scope="external" />
+  <pin name="sink1_ret_credit" direction="input" scope="external" />
+  <pin name="sink2_valid" direction="input" scope="external" />
+  <pin name="sink2_data[63..0]" direction="input" scope="external" />
+  <pin name="sink2_credit" direction="output" scope="external" />
+  <pin name="sink2_update" direction="output" scope="external" />
+  <pin name="sink2_ret_credit" direction="input" scope="external" />
+  <pin name="sink3_valid" direction="input" scope="external" />
+  <pin name="sink3_data[63..0]" direction="input" scope="external" />
+  <pin name="sink3_credit" direction="output" scope="external" />
+  <pin name="sink3_update" direction="output" scope="external" />
+  <pin name="sink3_ret_credit" direction="input" scope="external" />
+ </global>
+</pinplan>
