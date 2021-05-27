@@ -3,27 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'altera_reserved_tck'
-Slack : 2.217
+Slack : 2.100
 TNS   : 0.000
 Corner: Slow 900mV 100C Model
 
 Type  : Hold 'altera_reserved_tck'
-Slack : 0.015
+Slack : 0.014
 TNS   : 0.000
 Corner: Fast 900mV 0C Model
 
 Type  : Recovery 'altera_reserved_tck'
-Slack : 6.786
+Slack : 7.233
 TNS   : 0.000
 Corner: Slow 900mV 100C Model
 
 Type  : Removal 'altera_reserved_tck'
-Slack : 0.350
+Slack : 0.307
 TNS   : 0.000
 Corner: Fast 900mV 0C Model
 
 Type  : Minimum Pulse Width 'altera_reserved_tck'
-Slack : 4.414
+Slack : 4.457
 TNS   : 0.000
 Corner: Fast 900mV 100C Model
 

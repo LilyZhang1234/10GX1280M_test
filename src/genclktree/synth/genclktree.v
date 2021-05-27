@@ -11,7 +11,7 @@ module genclktree (
 		output wire  outclk_1  // outclk1.clk
 	);
 
-	genclktree_altera_iopll_1931_jay5pui iopll_0 (
+	genclktree_altera_iopll_1931_rsaixoa iopll_0 (
 		.rst      (rst),      //   input,  width = 1,   reset.reset
 		.refclk   (refclk),   //   input,  width = 1,  refclk.clk
 		.locked   (locked),   //  output,  width = 1,  locked.export

@@ -1,0 +1,23 @@
+Power Analyzer Status : Successful - Thu May 27 17:16:29 2021
+Quartus Prime Version : 21.1.0 Build 169 03/24/2021 SC Pro Edition
+Revision Name : test1280M
+Top-level Entity Name : test1280M
+Family : Cyclone 10 GX
+Device : 10CX220YF780E5G
+Timing Models : Final
+Power Models : Final
+Device Status : Final
+Total On-Chip Power Dissipation : 1368.81 mW
+Transceiver Standby On-Chip Power Dissipation : 88.31 mW
+Transceiver Dynamic On-Chip Power Dissipation : 0.00 mW
+I/O Standby On-Chip Power Dissipation : 18.73 mW
+I/O Dynamic On-Chip Power Dissipation : 9.67 mW
+Core Dynamic On-Chip Power Dissipation : 36.96 mW
+HPS Standby On-Chip Power Dissipation : 0.00 mW
+HPS Dynamic On-Chip Power Dissipation : 0.00 mW
+Device Static On-Chip Power Dissipation : 1215.14 mW
+High Bandwidth Memory Standby On-Chip Power Dissipation : 0.00 mW
+High Bandwidth Memory Dynamic On-Chip Power Dissipation : 0.00 mW
+Analog/Digital Converter Standby On-Chip Power Dissipation : 0.00 mW
+Analog/Digital Converter Dynamic On-Chip Power Dissipation : 0.00 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

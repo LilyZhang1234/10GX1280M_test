@@ -1,5 +1,5 @@
 Assembler report for test1280M
-Wed May 26 20:47:26 2021
+Thu May 27 18:31:45 2021
 Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
@@ -40,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed May 26 20:47:26 2021 ;
+; Assembler Status      ; Successful - Thu May 27 18:31:44 2021 ;
 ; Revision Name         ; test1280M                             ;
 ; Top-level Entity Name ; test1280M                             ;
 ; Family                ; Cyclone 10 GX                         ;
@@ -95,18 +95,18 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
-    Info: Processing started: Wed May 26 20:47:03 2021
-    Info: System process ID: 8624
+    Info: Processing started: Thu May 27 18:31:18 2021
+    Info: System process ID: 13096
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off test1280M -c test1280M
 Info (16677): Loading final database.
 Info (16734): Loading "final" snapshot for partition "root_partition".
 Info (16734): Loading "final" snapshot for partition "auto_fab_0".
-Info (16678): Successfully loaded final database: elapsed time is 00:00:04.
+Info (16678): Successfully loaded final database: elapsed time is 00:00:05.
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 1933 megabytes
-    Info: Processing ended: Wed May 26 20:47:27 2021
-    Info: Elapsed time: 00:00:24
-    Info: System process ID: 8624
+    Info: Processing ended: Thu May 27 18:31:46 2021
+    Info: Elapsed time: 00:00:28
+    Info: System process ID: 13096
 
 
 +----------------------------------------------------+
@@ -134,8 +134,8 @@ Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
 ; Option         ; Setting                                                                                                              ;
 +----------------+----------------------------------------------------------------------------------------------------------------------+
 ; JTAG usercode  ; 0xFFFFFFFF                                                                                                           ;
-; Checksum       ; 0x097259DD                                                                                                           ;
-; Design hash    ; 78AFDA95110CCD2BCF3D873FEB500C11                                                                                     ;
+; Checksum       ; 0x0971A1DA                                                                                                           ;
+; Design hash    ; 169F71701CB0F11BB576CCAD3DF04ED5                                                                                     ;
 +----------------+----------------------------------------------------------------------------------------------------------------------+
 
 

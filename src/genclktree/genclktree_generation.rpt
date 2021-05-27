@@ -12,7 +12,7 @@ Info: genclktree: "Transforming system: genclktree"
 Info: genclktree: "Naming system components in system: genclktree"
 Info: genclktree: "Processing generation queue"
 Info: genclktree: "Generating: genclktree"
-Info: genclktree: "Generating: genclktree_altera_iopll_1931_jay5pui"
+Info: genclktree: "Generating: genclktree_altera_iopll_1931_rsaixoa"
 Info: genclktree: Done "genclktree" with 2 modules, 2 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

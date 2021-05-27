@@ -20,13 +20,14 @@ input FMCAclk40,
 
 input pb,
 output led,
+output trigger,
 // probe
 //output wire probe,
 //output FMCAclk40,
 output source_out
 );
 
-////////////////////////////////////////////////////////////////////////////////////////	old data
+////////////////////////////////////////////////////////////////////////////////////////	old code
 //wire clk1280_RB;
 //wire clk40_RB;
 
@@ -119,18 +120,60 @@ wire [15:0] ch4;
 
 wire [1:0] pb;		//push button
 wire [1:0] led;	//led
-
+wire trigger;
 source_gen source_gen_inst0 (
 		.clk1280(FMCAclk1280),
 		.ch1(ch1),	//counter
 		.ch2(ch2),	//prbs
 		.ch3(ch3),	//const
 		.ch4(ch4),	//const_bar
-		.sel(pb),	//selector from push button
+		.sel(to_led),	//selector from push button
 		
 		.indic(led),//indicators to led's
-		.source_out(source_out)  //to FMCA
+		.source_out(source_out)  //to FMCA[15:0]
 );
 
 wire [15:0] source_out;
+
+wire [1:0] to_led; //wire w_Switch1;
+Debounce_Switch d_sw_inst0(
+	.i_Clk(FMCAclk1280), 
+	.i_Switch(pb[0]), 
+	.o_Switch(w_Switch_1[0])
+	
+);
+
+Debounce_Switch d_sw_inst1(
+	.i_Clk(FMCAclk1280), 
+	.i_Switch(pb[1]), 
+	.o_Switch(w_Switch_1[1])
+	
+);
+
+reg [1:0] r_LED_1 = 2'b00;
+reg [1:0] r_Switch_1 = 2'b00;
+wire [1:0] w_Switch_1;
+
+
+always @(posedge FMCAclk1280)
+  begin
+    r_Switch_1 <= w_Switch_1;         // Creates a Register
+ 
+    // This conditional expression looks for a falling edge on w_Switch_1.
+    // Here, the current value (i_Switch_1) is low, but the previous value
+    // (r_Switch_1) is high.  This means that we found a falling edge.
+    if (w_Switch_1[0] == 1'b0 && r_Switch_1[0] == 1'b1)
+    begin
+      r_LED_1[0] <= ~r_LED_1[0];         // Toggle LED output
+    end
+	 
+	 if (w_Switch_1[1] == 1'b0 && r_Switch_1[1] == 1'b1)
+    begin
+      r_LED_1[1] <= ~r_LED_1[1];         // Toggle LED output
+    end
+  end
+ 
+  assign to_led = r_LED_1;
+ 
+
 endmodule

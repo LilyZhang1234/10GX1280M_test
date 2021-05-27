@@ -31,8 +31,8 @@
  --                  Bank 2K:       1.8V
  --                  Bank 2J:       1.8V
  --                  Bank 2A:       1.2V
- --                  Bank 3B:  1.8V
- --                  Bank 3A:  1.8V
+ --                  Bank 3B:  1.2V
+ --                  Bank 3A:  1.2V
  -- RREF          : External reference resistor for the transceiver, MUST be connected to
  --                 GND via a 2k Ohm resistor.
  -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
@@ -100,15 +100,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   : 1.8V 
 GND                          : A25       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   : 1.8V    : 2K        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A27       :        :                   : 1.8V    : 2K        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA1       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA2       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   : 1.8V    : 3A        :                
-VCCIO3A                      : AA5       : power  :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA9       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA1       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA2       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   : 1.2V    : 3A        :                
+VCCIO3A                      : AA5       : power  :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   : 1.2V    : 3A        :                
+source_out[3](n)             : AA8       : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[3]                : AA9       : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
 GND                          : AA10      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA11      :        :                   : 1.2V    : 2A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   : 1.2V    : 2A        :                
@@ -128,12 +128,12 @@ GND                          : AA25      : gnd    :                   :         
 GND                          : AA26      : gnd    :                   :         :           :                
 GXB_NC                       : AA27      :        :                   : 0V      : 1C        :                
 GXB_NC                       : AA28      :        :                   : 0V      : 1C        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   : 1.2V    : 3A        :                
 GND                          : AB2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   : 1.2V    : 3A        :                
+source_out[8](n)             : AB5       : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[8]                : AB6       : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
 GND                          : AB7       : gnd    :                   :         :           :                
 MSEL2                        : AB8       : input  :                   : 0V      : CSS       :                
 nCE                          : AB9       :        :                   : 0V      : CSS       :                
@@ -156,13 +156,13 @@ GXB_GND*                     : AB25      :        :                   : 0V      
 GXB_GND*                     : AB26      :        :                   : 0V      : 1C        :                
 GND                          : AB27      : gnd    :                   :         :           :                
 GND                          : AB28      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   : 1.2V    : 3A        :                
 GND                          : AC4       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC6       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC6       :        :                   : 1.2V    : 3A        :                
+led[1]                       : AC7       : output : 1.2 V             : 1.2V    : 3A        : Y              
 nCONFIG                      : AC8       : input  :                   : 0V      : CSS       :                
 GND                          : AC9       : gnd    :                   :         :           :                
 altera_reserved_tdi          : AC10      : input  : 1.8 V             : 0V      : CSS       : N              
@@ -185,9 +185,9 @@ GND                          : AC26      : gnd    :                   :         
 GXB_NC                       : AC27      :        :                   : 0V      : 1C        :                
 GXB_NC                       : AC28      :        :                   : 0V      : 1C        :                
 GND                          : AD1       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD2       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD2       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   : 1.2V    : 3A        :                
+pb[1]                        : AD4       : input  : 1.2 V             : 1.2V    : 3A        : Y              
 NC                           : AD5       :        :                   :         :           :                
 GND                          : AD6       : gnd    :                   :         :           :                
 MSEL1                        : AD7       : input  :                   : 0V      : CSS       :                
@@ -212,12 +212,12 @@ GXB_GND*                     : AD25      :        :                   : 0V      
 GXB_GND*                     : AD26      :        :                   : 0V      : 1C        :                
 GND                          : AD27      : gnd    :                   :         :           :                
 GND                          : AD28      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   : 1.2V    : 3A        :                
 GND                          : AE3       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   : 1.8V    : 3A        :                
+pb[0]                        : AE4       : input  : 1.2 V             : 1.2V    : 3A        : Y              
 NC                           : AE5       :        :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   : 1.2V    : 3A        :                
 MSEL0                        : AE7       : input  :                   : 0V      : CSS       :                
 GND                          : AE8       : gnd    :                   :         :           :                
 AS_DATA0, ASDO               : AE9       :        :                   : 0V      : CSS       :                
@@ -240,12 +240,12 @@ GND                          : AE25      : gnd    :                   :         
 GND                          : AE26      : gnd    :                   :         :           :                
 GXB_NC                       : AE27      :        :                   : 0V      : 1C        :                
 GXB_NC                       : AE28      :        :                   : 0V      : 1C        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF1       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF1       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   : 1.2V    : 3A        :                
 NC                           : AF4       :        :                   :         :           :                
 GND                          : AF5       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   : 1.8V    : 3A        :                
+led[0]                       : AF6       : output : 1.2 V             : 1.2V    : 3A        : Y              
 nSTATUS                      : AF7       :        :                   : 0V      : CSS       :                
 TRST                         : AF8       : input  :                   : 0V      : CSS       :                
 nCSO2                        : AF9       :        :                   : 0V      : CSS       :                
@@ -268,9 +268,9 @@ GXB_GND*                     : AF25      :        :                   : 0V      
 GXB_GND*                     : AF26      :        :                   : 0V      : 1C        :                
 GND                          : AF27      : gnd    :                   :         :           :                
 GND                          : AF28      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG1       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG1       :        :                   : 1.2V    : 3A        :                
 GND                          : AG2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   : 1.2V    : 3A        :                
 NC                           : AG4       :        :                   :         :           :                
 AS_DATA2                     : AG5       :        :                   : 0V      : CSS       :                
 AS_DATA1                     : AG6       :        :                   : 0V      : CSS       :                
@@ -296,8 +296,8 @@ GND                          : AG25      : gnd    :                   :         
 GND                          : AG26      : gnd    :                   :         :           :                
 GXB_NC                       : AG27      :        :                   : 0V      : 1C        :                
 GXB_NC                       : AG28      :        :                   : 0V      : 1C        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH2       :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   : 1.8V    : 3A        :                
+trigger                      : AH2       : output : 1.2 V             : 1.2V    : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   : 1.2V    : 3A        :                
 GND                          : AH4       : gnd    :                   :         :           :                
 AS_DATA3                     : AH5       :        :                   : 0V      : CSS       :                
 altera_reserved_tms          : AH6       : input  : 1.8 V             : 0V      : CSS       : N              
@@ -386,7 +386,7 @@ NC                           : D5        :        :                   :         
 GND                          : D6        : gnd    :                   :         :           :                
 NC                           : D7        :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   : 1.8V    : 2K        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   : 1.8V    : 2K        :                
+auto_stp_external_storage_qualifier : D9        : input  : 1.8 V             : 1.8V    : 2K        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   : 1.8V    : 2K        :                
 GND                          : D11       : gnd    :                   :         :           :                
 NC                           : D12       :        :                   :         :           :                
@@ -462,7 +462,7 @@ GXB_GND*                     : F25       :        :                   : 0V      
 GXB_GND*                     : F26       :        :                   : 0V      : 1D        :                
 GND                          : F27       : gnd    :                   :         :           :                
 GND                          : F28       : gnd    :                   :         :           :                
-source_out[2]                : G1        : output : 1.8 V             : 1.8V    : 3B        : N              
+source_out[15](n)            : G1        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 GND                          : G2        : gnd    :                   :         :           :                
 NC                           : G3        :        :                   :         :           :                
 NC                           : G4        :        :                   :         :           :                
@@ -490,8 +490,8 @@ GND                          : G25       : gnd    :                   :         
 GND                          : G26       : gnd    :                   :         :           :                
 GXB_NC                       : G27       :        :                   : 0V      : 1D        :                
 GXB_NC                       : G28       :        :                   : 0V      : 1D        :                
-source_out[5]                : H1        : output : 1.8 V             : 1.8V    : 3B        : N              
-led[0]                       : H2        : output : 1.8 V             : 1.8V    : 3B        : N              
+source_out[15]               : H1        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   : 1.2V    : 3B        :                
 NC                           : H3        :        :                   :         :           :                
 GND                          : H4        : gnd    :                   :         :           :                
 NC                           : H5        :        :                   :         :           :                
@@ -519,8 +519,8 @@ GXB_GND*                     : H26       :        :                   : 0V      
 GND                          : H27       : gnd    :                   :         :           :                
 GND                          : H28       : gnd    :                   :         :           :                
 GND                          : J1        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J2        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J2        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   : 1.2V    : 3B        :                
 NC                           : J4        :        :                   :         :           :                
 NC                           : J5        :        :                   :         :           :                
 GND                          : J6        : gnd    :                   :         :           :                
@@ -546,10 +546,10 @@ GND                          : J25       : gnd    :                   :         
 GND                          : J26       : gnd    :                   :         :           :                
 GXB_NC                       : J27       :        :                   : 0V      : 1D        :                
 GXB_NC                       : J28       :        :                   : 0V      : 1D        :                
-source_out[4]                : K1        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   : 1.2V    : 3B        :                
+termination_3672~bp          : K2        : input  : 1.2 V             : 1.2V    : 3B        : N              
 GND                          : K3        : gnd    :                   :         :           :                
-pb[1]                        : K4        : input  : 1.8 V             : 1.8V    : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   : 1.2V    : 3B        :                
 NC                           : K5        :        :                   :         :           :                
 NC                           : K6        :        :                   :         :           :                
 NC                           : K7        :        :                   :         :           :                
@@ -574,10 +574,10 @@ GXB_GND*                     : K25       :        :                   : 0V      
 GXB_GND*                     : K26       :        :                   : 0V      : 1D        :                
 GND                          : K27       : gnd    :                   :         :           :                
 GND                          : K28       : gnd    :                   :         :           :                
-source_out[13]               : L1        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   : 1.2V    : 3B        :                
 NC                           : L5        :        :                   :         :           :                
 NC                           : L6        :        :                   :         :           :                
 NC                           : L7        :        :                   :         :           :                
@@ -602,10 +602,10 @@ GND                          : L25       : gnd    :                   :         
 GND                          : L26       : gnd    :                   :         :           :                
 GXB_NC                       : L27       :        :                   : 0V      : 1D        :                
 GXB_NC                       : L28       :        :                   : 0V      : 1D        :                
-FMCAclk40(n)                 : M1        : input  : LVDS              : 1.8V    : 3B        : Y              
+FMCAclk40(n)                 : M1        : input  : LVDS              : 1.2V    : 3B        : Y              
 GND                          : M2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   : 1.2V    : 3B        :                
 NC                           : M5        :        :                   :         :           :                
 NC                           : M6        :        :                   :         :           :                
 NC                           : M7        :        :                   :         :           :                
@@ -630,9 +630,9 @@ GXB_GND*                     : M25       :        :                   : 0V      
 GXB_GND*                     : M26       :        :                   : 0V      : 1D        :                
 GND                          : M27       : gnd    :                   :         :           :                
 GND                          : M28       : gnd    :                   :         :           :                
-FMCAclk40                    : N1        : input  : LVDS              : 1.8V    : 3B        : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : N2        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   : 1.8V    : 3B        :                
+FMCAclk40                    : N1        : input  : LVDS              : 1.2V    : 3B        : Y              
+source_out[14]               : N2        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[14](n)            : N3        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 GND                          : N4        : gnd    :                   :         :           :                
 NC                           : N5        :        :                   :         :           :                
 NC                           : N6        :        :                   :         :           :                
@@ -659,9 +659,9 @@ GND                          : N26       : gnd    :                   :         
 GXB_NC                       : N27       :        :                   : 0V      : 1D        :                
 GXB_NC                       : N28       :        :                   : 0V      : 1D        :                
 GND                          : P1        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   : 1.8V    : 3B        :                
-source_out[3]                : P3        : output : 1.8 V             : 1.8V    : 3B        : N              
-source_out[7]                : P4        : output : 1.8 V             : 1.8V    : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P4        :        :                   : 1.2V    : 3B        :                
 NC                           : P5        :        :                   :         :           :                
 NC                           : P6        :        :                   :         :           :                
 NC                           : P7        :        :                   :         :           :                
@@ -686,11 +686,11 @@ GXB_GND*                     : P25       :        :                   : 0V      
 GXB_GND*                     : P26       :        :                   : 0V      : 1D        :                
 GND                          : P27       : gnd    :                   :         :           :                
 GND                          : P28       : gnd    :                   :         :           :                
-led[1]                       : R1        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   : 1.2V    : 3B        :                
 GND                          : R3        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   : 1.2V    : 3B        :                
 NC                           : R6        :        :                   :         :           :                
 NC                           : R7        :        :                   :         :           :                
 GND                          : R8        : gnd    :                   :         :           :                
@@ -714,15 +714,15 @@ GND                          : R25       : gnd    :                   :         
 GND                          : R26       : gnd    :                   :         :           :                
 GXB_NC                       : R27       :        :                   : 0V      : 1D        :                
 GXB_NC                       : R28       :        :                   : 0V      : 1D        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T1        :        :                   : 1.8V    : 3B        :                
-auto_stp_external_storage_qualifier : T2        : input  : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   : 1.8V    : 3B        :                
-VCCIO3B                      : T5        : power  :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T6        :        :                   : 1.8V    : 3B        :                
-source_out[6]                : T7        : output : 1.8 V             : 1.8V    : 3B        : N              
-source_out[8]                : T8        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   : 1.8V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T1        :        :                   : 1.2V    : 3B        :                
+source_out[13]               : T2        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[13](n)            : T3        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[4]                : T4        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+VCCIO3B                      : T5        : power  :                   : 1.2V    : 3B        :                
+source_out[0]                : T6        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[0](n)             : T7        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[1]                : T8        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[1](n)             : T9        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 GND                          : T10       : gnd    :                   :         :           :                
 VCC                          : T11       : power  :                   : 0.9V    :           :                
 GNDSENSE                     : T12       :        :                   :         :           :                
@@ -742,14 +742,14 @@ GXB_GND*                     : T25       :        :                   : 0V      
 GXB_GND*                     : T26       :        :                   : 0V      : 1C        :                
 GND                          : T27       : gnd    :                   :         :           :                
 GND                          : T28       : gnd    :                   :         :           :                
-source_out[10]               : U1        : output : 1.8 V             : 1.8V    : 3B        : N              
+source_out[11](n)            : U1        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 GND                          : U2        : gnd    :                   :         :           :                
-source_out[1]                : U3        : output : 1.8 V             : 1.8V    : 3B        : N              
-source_out[15]               : U4        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : U5        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   : 1.8V    : 3B        :                
-VCCIO3B                      : U7        : power  :                   : 1.8V    : 3B        :                
-source_out[0]                : U8        : output : 1.8 V             : 1.8V    : 3B        : N              
+source_out[12]               : U3        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[12](n)            : U4        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[4](n)             : U5        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[2]                : U6        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+VCCIO3B                      : U7        : power  :                   : 1.2V    : 3B        :                
+source_out[5]                : U8        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 VREFB3BN0                    : U9        : power  :                   : GND     : 3B        :                
 VCC                          : U10       : power  :                   : 0.9V    :           :                
 VCCP                         : U11       : power  :                   : 0.9V    :           :                
@@ -770,14 +770,14 @@ GND                          : U25       : gnd    :                   :         
 GND                          : U26       : gnd    :                   :         :           :                
 GXB_NC                       : U27       :        :                   : 0V      : 1C        :                
 GXB_NC                       : U28       :        :                   : 0V      : 1C        :                
-source_out[11]               : V1        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   : 1.8V    : 3B        :                
-VCCIO3B                      : V4        : power  :                   : 1.8V    : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   : 1.8V    : 3B        :                
-source_out[14]               : V6        : output : 1.8 V             : 1.8V    : 3B        : N              
-source_out[9]                : V7        : output : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   : 1.8V    : 3B        :                
+source_out[11]               : V1        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   : 1.2V    : 3B        :                
+VCCIO3B                      : V4        : power  :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   : 1.2V    : 3B        :                
+source_out[2](n)             : V7        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
+source_out[5](n)             : V8        : output : Differential 1.2-V SSTL : 1.2V    : 3B        : Y              
 GND                          : V9        : gnd    :                   :         :           :                
 VCC                          : V10       : power  :                   : 0.9V    :           :                
 VCC                          : V11       : power  :                   : 0.9V    :           :                
@@ -799,13 +799,13 @@ GXB_GND*                     : V26       :        :                   : 0V      
 GND                          : V27       : gnd    :                   :         :           :                
 GND                          : V28       : gnd    :                   :         :           :                
 GND                          : W1        : gnd    :                   :         :           :                
-source_out[12]               : W2        : output : 1.8 V             : 1.8V    : 3B        : N              
-pb[0]                        : W3        : input  : 1.8 V             : 1.8V    : 3B        : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   : 1.8V    : 3A        :                
-VCCIO3A                      : W6        : power  :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   : 1.8V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   : 1.2V    : 3B        :                
+source_out[6]                : W4        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[9]                : W5        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+VCCIO3A                      : W6        : power  :                   : 1.2V    : 3A        :                
+source_out[7](n)             : W7        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[7]                : W8        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
 VREFB3AN0                    : W9        : power  :                   : GND     : 3A        :                
 altera_reserved_tdo          : W10       : output : 1.8 V             : 0V      : CSS       : N              
 GND                          : W11       : gnd    :                   :         :           :                
@@ -826,14 +826,14 @@ GND                          : W25       : gnd    :                   :         
 GND                          : W26       : gnd    :                   :         :           :                
 GXB_NC                       : W27       :        :                   : 0V      : 1C        :                
 GXB_NC                       : W28       :        :                   : 0V      : 1C        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y1        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   : 1.8V    : 3A        :                
+source_out[10]               : Y1        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[10](n)            : Y2        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
 GND                          : Y3        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   : 1.8V    : 3A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   : 1.8V    : 3A        :                
-VCCIO3A                      : Y8        : power  :                   : 1.8V    : 3A        :                
+source_out[6](n)             : Y4        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+source_out[9](n)             : Y5        : output : Differential 1.2-V SSTL : 1.2V    : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   : 1.2V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   : 1.2V    : 3A        :                
+VCCIO3A                      : Y8        : power  :                   : 1.2V    : 3A        :                
 altera_reserved_tck          : Y9        : input  : 1.8 V             : 0V      : CSS       : N              
 DNU                          : Y10       :        :                   :         :           :                
 DNU                          : Y11       :        :                   :         :           :                

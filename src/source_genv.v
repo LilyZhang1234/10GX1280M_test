@@ -17,7 +17,7 @@ module source_gen(
 always @ (posedge clk1280) begin
 	
 	
-	case (sel)
+	case (sel)	//might supposed to be ~sel
 		2'b00: source_out <= ch1;
 		2'b01: source_out <= ch2;
 		2'b10: source_out <= ch3;

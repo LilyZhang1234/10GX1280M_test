@@ -1,0 +1,450 @@
+Power Analyzer report for test1280M
+Thu May 27 17:16:29 2021
+Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Power Analyzer Summary
+  3. Power Savings Summary
+  4. Power Analyzer Settings
+  5. Power Analyzer Messages
+  6. Indeterminate Toggle Rates
+  7. Operating Conditions Used
+  8. On-Chip Power Dissipation by Block Type
+  9. Current Drawn per Supply
+ 10. I/O Current Drawn per Supply
+ 11. I/O Current Drawn by Voltage
+ 12. Transceiver Current Drawn per Supply
+ 13. Transceiver Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                                        ;
++------------------------------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                                      ; Successful - Thu May 27 17:16:29 2021            ;
+; Quartus Prime Version                                      ; 21.1.0 Build 169 03/24/2021 SC Pro Edition       ;
+; Revision Name                                              ; test1280M                                        ;
+; Top-level Entity Name                                      ; test1280M                                        ;
+; Family                                                     ; Cyclone 10 GX                                    ;
+; Device                                                     ; 10CX220YF780E5G                                  ;
+; Timing Models                                              ; Final                                            ;
+; Power Models                                               ; Final                                            ;
+; Device Status                                              ; Final                                            ;
+; Total On-Chip Power Dissipation                            ; 1368.81 mW                                       ;
+; Transceiver Standby On-Chip Power Dissipation              ; 88.31 mW                                         ;
+; Transceiver Dynamic On-Chip Power Dissipation              ; 0.00 mW                                          ;
+; I/O Standby On-Chip Power Dissipation                      ; 18.73 mW                                         ;
+; I/O Dynamic On-Chip Power Dissipation                      ; 9.67 mW                                          ;
+; Core Dynamic On-Chip Power Dissipation                     ; 36.96 mW                                         ;
+; HPS Standby On-Chip Power Dissipation                      ; 0.00 mW                                          ;
+; HPS Dynamic On-Chip Power Dissipation                      ; 0.00 mW                                          ;
+; Device Static On-Chip Power Dissipation                    ; 1215.14 mW                                       ;
+; High Bandwidth Memory Standby On-Chip Power Dissipation    ; 0.00 mW                                          ;
+; High Bandwidth Memory Dynamic On-Chip Power Dissipation    ; 0.00 mW                                          ;
+; Analog/Digital Converter Standby On-Chip Power Dissipation ; 0.00 mW                                          ;
+; Analog/Digital Converter Dynamic On-Chip Power Dissipation ; 0.00 mW                                          ;
+; Power Estimation Confidence                                ; Low: user provided insufficient toggle rate data ;
++------------------------------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------+
+; Power Savings Summary                ;
++------------------------+-------------+
+; Power Savings Type     ; Power Saved ;
++------------------------+-------------+
+; SmartVID Power Savings ; 0.00 mW     ;
++------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Design Assistant include IP blocks                               ; Off                                   ; Off           ;
+; High fanout net threshold for RAM inference                      ; 15                                    ; 15            ;
+; Design Assistant limit on reported violations per rule           ; 5000                                  ; 5000          ;
+; Allow RAM Retiming                                               ; Off                                   ; Off           ;
+; Allow DSP Retiming                                               ; Off                                   ; Off           ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Use Input Files                                                  ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 50                                    ; 50            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
+; Enable HPS                                                       ; Off                                   ; Off           ;
+; Processor Frequency                                              ; 0.0                                   ; 0.0           ;
+; SmartVoltage ID                                                  ; Off                                   ; Off           ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
+    Info: Processing started: Thu May 27 17:16:07 2021
+    Info: System process ID: 15992
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off test1280M -c test1280M
+Info (16677): Loading final database.
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16734): Loading "final" snapshot for partition "auto_fab_0".
+Info (16678): Successfully loaded final database: elapsed time is 00:00:05.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (19539): Reading the HDL-embedded SDC files elapsed 00:00:00.
+Info (332104): Reading SDC File: 'src/test1280M.sdc'
+Warning (332174): Ignored filter at test1280M.sdc(40): ECLK0 could not be matched with a port File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 40
+Warning (332049): Ignored create_clock at test1280M.sdc(40): Argument <targets> is an empty collection File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 40
+    Info (332050): create_clock -name {ECLK0} -period 25.000 -waveform { 0.000 12.500 } [get_ports {ECLK0}] File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 40
+Warning (332174): Ignored filter at test1280M.sdc(66): genclk_u0|iopll_0|outclk1 could not be matched with a clock File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 66
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(66): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 66
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk0}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 66
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(67): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 67
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk0}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 67
+Warning (332174): Ignored filter at test1280M.sdc(68): genclk_u0|iopll_0|outclk2 could not be matched with a clock File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 68
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(68): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 68
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk0}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 68
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(69): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 69
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk0}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 69
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(74): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 74
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk0}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 74
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(75): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 75
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk0}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 75
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(76): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 76
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk0}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 76
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(77): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 77
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk0}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 77
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(80): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 80
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 80
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(81): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 81
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 81
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(82): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 82
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.090   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 82
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(82): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 82
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(83): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 83
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.090   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 83
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(83): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 83
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(84): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 84
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 84
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(84): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 84
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(85): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 85
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 85
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(85): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 85
+Warning (332174): Ignored filter at test1280M.sdc(86): hardware_i2c_top_inst|i2c_slave_top_inst|count[2] could not be matched with a clock File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 86
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(86): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 86
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 86
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(86): Argument -rise_to with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 86
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(87): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 87
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 87
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(87): Argument -fall_to with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 87
+Warning (332174): Ignored filter at test1280M.sdc(88): hardware_i2c_top_inst|I2C_Master_inst|clock could not be matched with a clock File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 88
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(88): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 88
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 88
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(88): Argument -rise_to with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 88
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(89): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 89
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 89
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(89): Argument -fall_to with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 89
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(90): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 90
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 90
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(91): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 91
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.060   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 91
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(92): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 92
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.090   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 92
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(92): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 92
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(93): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 93
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.090   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 93
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(93): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 93
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(94): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 94
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 94
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(94): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 94
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(95): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 95
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 95
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(95): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 95
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(96): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 96
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 96
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(96): Argument -rise_to with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 96
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(97): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 97
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 97
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(97): Argument -fall_to with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 97
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(98): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 98
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -rise_to [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 98
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(98): Argument -rise_to with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 98
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(99): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 99
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk1}] -fall_to [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 99
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(99): Argument -fall_to with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 99
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(100): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 100
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 100
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(101): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 101
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 101
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(102): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 102
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 102
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(102): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 102
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(103): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 103
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 103
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(103): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 103
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(104): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 104
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.220   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 104
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(104): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 104
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(105): Argument -rise_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 105
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.220   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 105
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(105): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 105
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(106): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 106
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 106
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(107): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 107
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk0}]  0.130   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 107
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(108): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 108
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 108
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(108): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 108
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(109): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 109
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.160   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 109
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(109): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 109
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(110): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 110
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.220   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 110
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(110): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 110
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(111): Argument -fall_from with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 111
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {genclk_u0|iopll_0|outclk2}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk2}]  0.220   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 111
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(111): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk2}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 111
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(112): Argument -rise_from with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 112
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 112
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(112): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 112
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(113): Argument -rise_from with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 113
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 113
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(113): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 113
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(114): Argument -fall_from with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 114
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 114
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(114): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 114
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(115): Argument -fall_from with value [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 115
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {hardware_i2c_top_inst|i2c_slave_top_inst|count[2]}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 115
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(115): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 115
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(116): Argument -rise_from with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 116
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 116
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(116): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 116
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(117): Argument -rise_from with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 117
+    Info (332050): set_clock_uncertainty -rise_from [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 117
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(117): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 117
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(118): Argument -fall_from with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 118
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] -rise_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 118
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(118): Argument -rise_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 118
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(119): Argument -fall_from with value [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 119
+    Info (332050): set_clock_uncertainty -fall_from [get_clocks {hardware_i2c_top_inst|I2C_Master_inst|clock}] -fall_to [get_clocks {genclk_u0|iopll_0|outclk1}]  0.200   File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 119
+Warning (332049): Ignored set_clock_uncertainty at test1280M.sdc(119): Argument -fall_to with value [get_clocks {genclk_u0|iopll_0|outclk1}] contains zero elements File: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/src/test1280M.sdc Line: 119
+Info (18794): Reading SDC File: 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/testcyclone10GX1280M/qdb/.t/60b017b0ed5.tmp/.temp/sld_fabrics/ipgen/alt_sld_fab_0/alt_sld_fab_0/altera_signaltap_agent_1920/synth/intel_signal_tap.sdc' for instance: 'auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0'
+Info: Constraints on the CDC paths between acquisition clock and communication clock are created in the Signal Tap instance, auto_fab_0|alt_sld_fab_0|alt_sld_fab_0|auto_signaltap_auto_signaltap_0
+Warning (332087): The master clock for this clock assignment could not be derived.  Clock: genclk_u0|iopll_0|outclk0 was not created.
+    Warning (332034): Specified master clock: ECLK0 not found on or feeding the specified source node: genclk_u0|iopll_0|altera_iopll_i|c10gx_pll|iopll_inst|refclk[0]
+Warning (332060): Node: FMCAclk40 was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register source_gen_inst0|source_out[0] is being clocked by FMCAclk40
+Info (332104): Reading SDC File: 'c:/intelfpga_pro/21.1/ip/altera/sld/jtag/altera_jtag_wys_atom/default_jtag.sdc'
+Info (19449): Reading SDC files elapsed 00:00:01.
+Warning (332087): The master clock for this clock assignment could not be derived.  Clock: genclk_u0|iopll_0|outclk0 was not created.
+    Warning (332034): Specified master clock: ECLK0 not found on or feeding the specified source node: genclk_u0|iopll_0|altera_iopll_i|c10gx_pll|iopll_inst|refclk[0]
+Warning (332060): Node: FMCAclk40 was determined to be a clock but was found without an associated clock assignment.
+    Info (13166): Register source_gen_inst0|source_out[0] is being clocked by FMCAclk40
+Info (332152): Existing clock uncertainty assignments were detected. They will take precedence over the derive_clock_uncertainty command
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (215049): Average toggle rate for this design is 4.894 millions of transitions / sec.
+Info (215031): Total on-chip power estimate for the design is 1368.81 mW.
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 1750 megabytes
+    Info: Processing ended: Thu May 27 17:16:29 2021
+    Info: Elapsed time: 00:00:22
+    Info: System process ID: 15992
+
+
++-------------------------------------------------------------------+
+; Indeterminate Toggle Rates                                        ;
++-------------------------------------+-----------------------------+
+; Node                                ; Reason                      ;
++-------------------------------------+-----------------------------+
+; FMCAclk40                           ; No valid clock domain found ;
+; pb[0]                               ; No valid clock domain found ;
+; pb[1]                               ; No valid clock domain found ;
+; auto_stp_external_storage_qualifier ; No valid clock domain found ;
+; FPGA_RESETn                         ; No valid clock domain found ;
+; termination_3674~bp                 ; No valid clock domain found ;
++-------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------+
+; Operating Conditions Used                                ;
++---------------------------------------------+------------+
+; Setting                                     ; Value      ;
++---------------------------------------------+------------+
+; Device power characteristics                ; Typical    ;
+;                                             ;            ;
+; Voltages                                    ;            ;
+;     VCCP                                    ; 0.90 V     ;
+;     VCCPT                                   ; 1.80 V     ;
+;     VCCA_PLL                                ; 1.80 V     ;
+;     VCC                                     ; 0.90 V     ;
+;     VCCPGM                                  ; 1.80 V     ;
+;     VCCBAT                                  ; 1.80 V     ;
+;     VCCERAM                                 ; 0.90 V     ;
+;     1.8 V I/O Standard                      ; 1.8 V      ;
+;     1.2 V I/O Standard                      ; 1.2 V      ;
+;     LVDS I/O Standard                       ; 1.8 V      ;
+;     Differential 1.2-V SSTL I/O Standard    ; 1.2 V      ;
+;                                             ;            ;
+; Auto computed junction temperature          ; 54.1 ??C   ;
+;     Ambient temperature                     ; 50.0 ??C   ;
+;     Junction-to-Case thermal resistance     ; 0.40 ??C/W ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 ??C/W ;
+;     Heat Sink-to-Ambient thermal resistance ; 2.50 ??C/W ;
+;                                             ;            ;
+; Board model used                            ; None       ;
++---------------------------------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; On-Chip Power Dissipation by Block Type                                                                                                            ;
++--------------------+-----------------------------------+-----------------------------+-----------------------------+-------------------------------+
+; Block Type         ; Total On-Chip Power by Block Type ; Block On-Chip Dynamic Power ; Block On-Chip Standby Power ; Routing On-Chip Dynamic Power ;
++--------------------+-----------------------------------+-----------------------------+-----------------------------+-------------------------------+
+; M20K               ; 22.20 mW                          ; 21.85 mW                    ; 0.00 mW                     ; 0.35 mW                       ;
+; PLL                ; 17.32 mW                          ; 9.67 mW                     ; 7.65 mW                     ; 0.00 mW                       ;
+; Combinational cell ; 0.87 mW                           ; 0.45 mW                     ; 0.00 mW                     ; 0.42 mW                       ;
+; Register cell      ; 6.99 mW                           ; 0.60 mW                     ; 0.00 mW                     ; 6.38 mW                       ;
+; IO Analog          ; 9.56 mW                           ; 0.00 mW                     ; 9.56 mW                     ; 0.00 mW                       ;
+; IO Digital         ; 1.52 mW                           ; 0.00 mW                     ; 1.52 mW                     ; 0.00 mW                       ;
+; HSSI Analog        ; 88.31 mW                          ; 0.00 mW                     ; 88.31 mW                    ; 0.00 mW                       ;
+; Clock Network      ; 6.90 mW                           ; 1.12 mW                     ; 0.00 mW                     ; 5.78 mW                       ;
++--------------------+-----------------------------------+-----------------------------+-----------------------------+-------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Current Drawn per Supply                                                                                    ;
++----------------+---------------------+-----------------------+-----------------------+----------------------+
+; Voltage Supply ; Total Current Drawn ; Dynamic Current Drawn ; Standby Current Drawn ; Static Current Drawn ;
++----------------+---------------------+-----------------------+-----------------------+----------------------+
+; VCCP           ; 143.94 mA           ; 0.54 mA               ; 4.54 mA               ; 138.87 mA            ;
+; VCCPT          ; 89.29 mA            ; 0.08 mA               ; 5.23 mA               ; 83.98 mA             ;
+; VCCA_PLL       ; 22.99 mA            ; 5.12 mA               ; 2.87 mA               ; 14.99 mA             ;
+; VCC            ; 834.50 mA           ; 39.73 mA              ; 0.00 mA               ; 794.77 mA            ;
+; VCCPGM         ; 0.01 mA             ; 0.00 mA               ; 0.00 mA               ; 0.01 mA              ;
+; VCCBAT         ; 0.07 mA             ; 0.00 mA               ; 0.00 mA               ; 0.07 mA              ;
+; VCCERAM        ; 13.90 mA            ; 1.34 mA               ; 0.00 mA               ; 12.56 mA             ;
++----------------+---------------------+-----------------------+-----------------------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; I/O Current Drawn per Supply                                                                                   ;
++---------+---------+---------------------+-----------------------+-----------------------+----------------------+
+; Supply  ; Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Standby Current Drawn ; Static Current Drawn ;
++---------+---------+---------------------+-----------------------+-----------------------+----------------------+
+; VCCIO2A ; 1.2V    ; 0.04 mA             ; 0.00 mA               ; 0.00 mA               ; 0.04 mA              ;
+; VCCIO2J ; 1.8V    ; 0.12 mA             ; 0.00 mA               ; 0.00 mA               ; 0.12 mA              ;
+; VCCIO2K ; 1.8V    ; 0.12 mA             ; 0.00 mA               ; 0.00 mA               ; 0.12 mA              ;
+; VCCIO2L ; 1.8V    ; 0.12 mA             ; 0.00 mA               ; 0.00 mA               ; 0.12 mA              ;
+; VCCIO3A ; 1.2V    ; 0.07 mA             ; 0.00 mA               ; 0.04 mA               ; 0.04 mA              ;
+; VCCIO3B ; 1.2V    ; 0.16 mA             ; 0.00 mA               ; 0.05 mA               ; 0.11 mA              ;
++---------+---------+---------------------+-----------------------+-----------------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; I/O Current Drawn by Voltage                                                                         ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+; Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Standby Current Drawn ; Static Current Drawn ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+; 1.2V    ; 0.27 mA             ; 0.00 mA               ; 0.09 mA               ; 0.18 mA              ;
+; 1.8V    ; 0.36 mA             ; 0.00 mA               ; 0.00 mA               ; 0.36 mA              ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Transceiver Current Drawn per Supply                                                                               ;
++-------------+---------+---------------------+-----------------------+-----------------------+----------------------+
+; Supply      ; Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Standby Current Drawn ; Static Current Drawn ;
++-------------+---------+---------------------+-----------------------+-----------------------+----------------------+
+; VCCH_GXBL   ; 1.8V    ; 106.00 mA           ; 0.00 mA               ; 49.06 mA              ; 56.94 mA             ;
+; VCCR_GXBL1C ; 0.95V   ; 21.99 mA            ; 0.00 mA               ; 0.00 mA               ; 21.99 mA             ;
+; VCCR_GXBL1D ; 0.95V   ; 64.23 mA            ; 0.00 mA               ; 0.00 mA               ; 64.23 mA             ;
++-------------+---------+---------------------+-----------------------+-----------------------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Transceiver Current Drawn by Voltage                                                                 ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+; Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Standby Current Drawn ; Static Current Drawn ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+; 0.95V   ; 86.22 mA            ; 0.00 mA               ; 0.00 mA               ; 86.22 mA             ;
+; 1.8V    ; 106.00 mA           ; 0.00 mA               ; 49.06 mA              ; 56.94 mA             ;
++---------+---------------------+-----------------------+-----------------------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                          ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+; Data Source                                                                            ; Total        ; Pin        ; Registered    ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+; Simulation (from file)                                                                 ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Node, entity or clock assignment                                                       ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 3 (0.1%)     ; 1 (2.1%)   ; 0 (0.0%)      ; 2 (0.1%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.1%)     ; 1 (2.1%)   ; 0 (0.0%)      ; 2 (0.1%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Vectorless estimation                                                                  ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 3619 (99.6%) ; 35 (74.5%) ; 1921 (100.0%) ; 1663 (99.9%)  ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 911 (25.1%)  ; 0 (0.0%)   ; 327 (17.0%)   ; 584 (35.1%)   ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 3619 (99.6%) ; 35 (74.5%) ; 1921 (100.0%) ; 1663 (99.9%)  ;
+;                                                                                        ;              ;            ;               ;               ;
+; Default assignment                                                                     ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 2 (0.1%)     ; 2 (4.3%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 11 (0.3%)    ; 11 (23.4%) ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Assumed 0                                                                              ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 9 (0.2%)     ; 9 (19.1%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "Power Analyzer Settings".
+
+

@@ -11,22 +11,8 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name POWER_AUTO_COMPUTE_TJ ON
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_location_assignment PIN_AB16 -to ECLK0
-set_instance_assignment -name IO_STANDARD LVDS -to ECLK0 -entity test1280M
-set_location_assignment PIN_AA16 -to "ECLK0(n)"
-set_location_assignment PIN_AE15 -to EDIN00
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to EDIN00 -entity test1280M
-set_location_assignment PIN_AE14 -to "EDIN00(n)"
-set_location_assignment PIN_A19 -to EDIN00_test
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to EDIN00_test -entity test1280M
-set_location_assignment PIN_A18 -to "EDIN00_test(n)"
-set_location_assignment PIN_A24 -to FPGA_CLK
-set_instance_assignment -name IO_STANDARD LVDS -to FPGA_CLK -entity test1280M
-set_location_assignment PIN_A23 -to "FPGA_CLK(n)"
 set_location_assignment PIN_AC12 -to FPGA_RESETn
 set_instance_assignment -name IO_STANDARD "1.2 V" -to FPGA_RESETn -entity test1280M
-set_location_assignment PIN_V5 -to probe
-set_instance_assignment -name IO_STANDARD "1.2 V" -to probe -entity test1280M
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE src/stp1.stp
 set_global_assignment -name SDC_FILE src/test1280M.sdc
@@ -39,66 +25,6 @@ set_global_assignment -name SIGNALTAP_FILE src/stp1.stp
 set_instance_assignment -name PARTITION_COLOUR 4282449757 -to test1280M -entity test1280M
 set_instance_assignment -name PARTITION_COLOUR 4290707362 -to auto_fab_0 -entity test1280M
 set_global_assignment -name PROJECT_IP_REGENERATION_POLICY NEVER_REGENERATE_IP
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[2] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[1] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[14] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[0] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[13] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[12] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[11] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[10] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[9] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[8] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[7] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[6] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[5] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[4] -section_id counter
-set_global_assignment -name PIN_PLANNER_GROUP_MEMBER counter_out[3] -section_id counter
-set_location_assignment PIN_U6 -to counter_out[2]
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[2] -entity test1280M
-set_location_assignment PIN_V7 -to "counter_out[2](n)"
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[3] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[4] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[5] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[6] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[7] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[8] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[9] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[10] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[11] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[12] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[13] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[14] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[0] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to counter_out[1] -entity test1280M
-set_location_assignment PIN_T6 -to counter_out[0]
-set_location_assignment PIN_T7 -to "counter_out[0](n)"
-set_location_assignment PIN_T8 -to counter_out[1]
-set_location_assignment PIN_T9 -to "counter_out[1](n)"
-set_location_assignment PIN_AA9 -to counter_out[3]
-set_location_assignment PIN_AA8 -to "counter_out[3](n)"
-set_location_assignment PIN_T4 -to counter_out[4]
-set_location_assignment PIN_U5 -to "counter_out[4](n)"
-set_location_assignment PIN_U8 -to counter_out[5]
-set_location_assignment PIN_V8 -to "counter_out[5](n)"
-set_location_assignment PIN_W4 -to counter_out[6]
-set_location_assignment PIN_Y4 -to "counter_out[6](n)"
-set_location_assignment PIN_W8 -to counter_out[7]
-set_location_assignment PIN_W7 -to "counter_out[7](n)"
-set_location_assignment PIN_AB6 -to counter_out[8]
-set_location_assignment PIN_AB5 -to "counter_out[8](n)"
-set_location_assignment PIN_W5 -to counter_out[9]
-set_location_assignment PIN_Y5 -to "counter_out[9](n)"
-set_location_assignment PIN_Y1 -to counter_out[10]
-set_location_assignment PIN_Y2 -to "counter_out[10](n)"
-set_location_assignment PIN_V1 -to counter_out[11]
-set_location_assignment PIN_U1 -to "counter_out[11](n)"
-set_location_assignment PIN_U3 -to counter_out[12]
-set_location_assignment PIN_U4 -to "counter_out[12](n)"
-set_location_assignment PIN_T2 -to counter_out[13]
-set_location_assignment PIN_T3 -to "counter_out[13](n)"
-set_location_assignment PIN_N2 -to counter_out[14]
-set_location_assignment PIN_N3 -to "counter_out[14](n)"
 set_instance_assignment -name IO_STANDARD LVDS -to FMCAclk40 -entity test1280M
 set_location_assignment PIN_N1 -to FMCAclk40
 set_location_assignment PIN_M1 -to "FMCAclk40(n)"
@@ -106,15 +32,71 @@ set_global_assignment -name VERILOG_FILE src/counter_source.v
 set_global_assignment -name VERILOG_FILE src/prbs_source.v
 set_global_assignment -name VERILOG_FILE src/source_genv.v
 set_global_assignment -name VERILOG_FILE src/const_source.v
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[15] -entity test1280M
 set_location_assignment PIN_H1 -to source_out[15]
 set_location_assignment PIN_G1 -to "source_out[15](n)"
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[14] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[13] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[12] -entity test1280M
-set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[11] -entity test1280M
 set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[10] -entity test1280M
 set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[9] -entity test1280M
 set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[8] -entity test1280M
 set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[7] -entity test1280M
 set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[6] -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[4] -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[3] -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[2] -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[1] -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[0] -entity test1280M
+set_location_assignment PIN_N3 -to "source_out[14](n)"
+set_location_assignment PIN_N2 -to source_out[14]
+set_location_assignment PIN_T3 -to "source_out[13](n)"
+set_location_assignment PIN_T2 -to source_out[13]
+set_location_assignment PIN_U4 -to "source_out[12](n)"
+set_location_assignment PIN_U3 -to source_out[12]
+set_location_assignment PIN_U1 -to "source_out[11](n)"
+set_location_assignment PIN_V1 -to source_out[11]
+set_location_assignment PIN_Y2 -to "source_out[10](n)"
+set_location_assignment PIN_Y1 -to source_out[10]
+set_location_assignment PIN_Y5 -to "source_out[9](n)"
+set_location_assignment PIN_W5 -to source_out[9]
+set_location_assignment PIN_AB5 -to "source_out[8](n)"
+set_location_assignment PIN_AB6 -to source_out[8]
+set_location_assignment PIN_W7 -to "source_out[7](n)"
+set_location_assignment PIN_W8 -to source_out[7]
+set_location_assignment PIN_Y4 -to "source_out[6](n)"
+set_location_assignment PIN_W4 -to source_out[6]
+set_location_assignment PIN_V8 -to "source_out[5](n)"
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[5](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[15](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[14](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[13](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[12](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[11](n)" -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to "source_out[10](n)" -entity test1280M
+set_location_assignment PIN_U8 -to source_out[5]
+set_location_assignment PIN_U5 -to "source_out[4](n)"
+set_location_assignment PIN_T4 -to source_out[4]
+set_location_assignment PIN_AA8 -to "source_out[3](n)"
+set_location_assignment PIN_AA9 -to source_out[3]
+set_location_assignment PIN_V7 -to "source_out[2](n)"
+set_location_assignment PIN_U6 -to source_out[2]
+set_location_assignment PIN_T9 -to "source_out[1](n)"
+set_location_assignment PIN_T8 -to source_out[1]
+set_location_assignment PIN_T7 -to "source_out[0](n)"
+set_location_assignment PIN_T6 -to source_out[0]
+set_location_assignment PIN_AD4 -to pb[1]
+set_location_assignment PIN_AE4 -to pb[0]
+set_location_assignment PIN_AC7 -to led[1]
+set_location_assignment PIN_AF6 -to led[0]
+set_instance_assignment -name IO_STANDARD "1.2 V" -to pb[1] -entity test1280M
+set_instance_assignment -name IO_STANDARD "1.2 V" -to pb[0] -entity test1280M
+set_instance_assignment -name IO_STANDARD "1.2 V" -to pb -entity test1280M
+set_instance_assignment -name IO_STANDARD "1.2 V" -to led[1] -entity test1280M
+set_instance_assignment -name IO_STANDARD "1.2 V" -to led[0] -entity test1280M
+set_instance_assignment -name IO_STANDARD "1.2 V" -to led -entity test1280M
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[15]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[14]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[12]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[13]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[11]
+set_instance_assignment -name IO_STANDARD "DIFFERENTIAL 1.2-V SSTL" -to source_out[5]
+set_global_assignment -name VERILOG_FILE src/sw_debouncer.v
+set_location_assignment PIN_AH2 -to trigger
+set_instance_assignment -name IO_STANDARD "1.2 V" -to trigger -entity test1280M

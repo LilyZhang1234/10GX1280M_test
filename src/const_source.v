@@ -9,8 +9,8 @@ module const_source(
 
 
 always @ (posedge clk1280) begin
-	const = 16'h3C5C;
-	const_bar = 16'hC3A3;
+	const = 16'h3C5C;			//const
+	const_bar = 16'hC3A3;	//const_bar
 end 
 
 

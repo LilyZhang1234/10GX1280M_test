@@ -1,5 +1,5 @@
 Fitter Finalize Stage Report for test1280M
-Wed May 26 20:46:48 2021
+Thu May 27 18:24:57 2021
 Quartus Prime Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
 
 
@@ -38,15 +38,15 @@ https://fpgasoftware.intel.com/eula.
 ; Resource                                               ; Usage         ; %    ;
 +--------------------------------------------------------+---------------+------+
 ;                                                        ;               ;      ;
-; Programmable power technology high-speed tiles         ; 369 / 3,531   ; 10 % ;
-; Programmable power technology low-power tiles          ; 3,162 / 3,531 ; 90 % ;
-;     -- low-power tiles that are used by the design     ; 530 / 3,162   ; 17 % ;
-;     -- unused tiles (low-power)                        ; 2,632 / 3,162 ; 83 % ;
+; Programmable power technology high-speed tiles         ; 391 / 3,531   ; 11 % ;
+; Programmable power technology low-power tiles          ; 3,140 / 3,531 ; 89 % ;
+;     -- low-power tiles that are used by the design     ; 581 / 3,140   ; 19 % ;
+;     -- unused tiles (low-power)                        ; 2,559 / 3,140 ; 81 % ;
 ;                                                        ;               ;      ;
-; Programmable power technology high-speed LAB tiles     ; 182 / 2,642   ; 7 %  ;
-; Programmable power technology low-power LAB tiles      ; 2,460 / 2,642 ; 93 % ;
-;     -- low-power LAB tiles that are used by the design ; 501 / 2,460   ; 20 % ;
-;     -- unused LAB tiles (low-power)                    ; 1,959 / 2,460 ; 80 % ;
+; Programmable power technology high-speed LAB tiles     ; 201 / 2,642   ; 8 %  ;
+; Programmable power technology low-power LAB tiles      ; 2,441 / 2,642 ; 92 % ;
+;     -- low-power LAB tiles that are used by the design ; 550 / 2,441   ; 23 % ;
+;     -- unused LAB tiles (low-power)                    ; 1,891 / 2,441 ; 77 % ;
 ;                                                        ;               ;      ;
 +--------------------------------------------------------+---------------+------+
 
@@ -58,13 +58,13 @@ Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 21.1.0 Build 169 03/24/2021 SC Pro Edition
-    Info: Processing started: Wed May 26 20:43:09 2021
-    Info: System process ID: 7036
+    Info: Processing started: Thu May 27 18:20:24 2021
+    Info: System process ID: 18004
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off test1280M -c test1280M
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = test1280M
 Info: Revision = test1280M
 Info (11888): Total time spent on timing analysis during Post-Routing is 0.00 seconds.
-Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:05
+Info (16557): Fitter post-fit operations ending: elapsed time is 00:01:33
 
 

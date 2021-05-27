@@ -1,4 +1,4 @@
---lpm_counter CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone 10 GX" lpm_modulus=84 lpm_port_updown="PORT_UNUSED" lpm_width=7 clk_en clock q sclr CARRY_CHAIN="MANUAL"
+--lpm_counter CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone 10 GX" lpm_modulus=86 lpm_port_updown="PORT_UNUSED" lpm_width=7 clk_en clock q sclr CARRY_CHAIN="MANUAL"
 --VERSION_BEGIN 21.1 cbx_lpm_add_sub 2021:03:24:19:15:23:SC cbx_lpm_compare 2021:03:24:19:15:23:SC cbx_lpm_counter 2021:03:24:19:15:23:SC cbx_lpm_decode 2021:03:24:19:15:23:SC cbx_mgl 2021:03:24:19:15:36:SC cbx_nadder 2021:03:24:19:15:23:SC cbx_stratix 2021:03:24:19:15:23:SC cbx_stratixii 2021:03:24:19:15:23:SC  VERSION_END
 
 
@@ -25,7 +25,7 @@ WITH ( DONT_TOUCH, EXTENDED_LUT, LUT_MASK, SHARED_ARITH)
 RETURNS ( combout, cout, shareout, sumout);
 
 --synthesis_resources = lut 7 reg 7 
-SUBDESIGN cntr_7fg
+SUBDESIGN cntr_9fg
 ( 
 	clk_en	:	input;
 	clock	:	input;
@@ -115,7 +115,7 @@ BEGIN
 	data[] = GND;
 	external_cin = B"1";
 	lsb_cin = B"0";
-	modulus_bus[] = B"1010011";
+	modulus_bus[] = B"1010101";
 	modulus_trigger = cout_actual;
 	q[] = safe_q[];
 	s_val[] = B"1111111";
